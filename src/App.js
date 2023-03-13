@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './App.css'
 import PlayerShow from './PlayerShow'
 
 function getRandomPlayer() {
@@ -52,9 +53,9 @@ function App() {
 
 
   return (
-    <div>
+    <div className='app'>
       <button onClick={handleClick}>Add Player</button>
-      <div>{renderedPlayers}</div>
+      <div className='player-list'>{renderedPlayers}</div>
     </div>
   )
 }

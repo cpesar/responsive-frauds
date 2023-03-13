@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './PlayerShow.css'
 
 import Aroid from './players/aroid.jpeg'
 import BigHurt from './players/bighurt.jpeg'
@@ -21,6 +22,7 @@ const jpegMap = {
   Miggy,
   Sammy,
   BigSloppy,
+  ThumbsDown
 }
 
 
@@ -33,9 +35,9 @@ export default function PlayerShow({ name }) {
 
 
   return (
-    <div onClick={handleClick}>
-      <img alt="player" src={jpegMap[name]}></img>
-      <img alt="thumbsdown" src={ThumbsDown} style={{ width: 20 + 20 * clicks + 'px' }}></img>
+    <div className='player-show' onClick={handleClick}>
+      <img className='player' alt="player" src={jpegMap[name]}></img>
+      <img className='thumbs-down' alt="thumbsdown" src={ThumbsDown} style={{ width: 20 + 20 * clicks + 'px' }}></img>
     </div>
   )
 }

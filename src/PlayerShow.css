@@ -1,0 +1,18 @@
+.player-show {
+  position: relative;
+  border: 1px solid lightgrey;
+  padding:10px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow:0px 3px 4px lightgrey;
+}
+
+.player {
+  height: 200px;
+}
+
+.thumbs-down {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
